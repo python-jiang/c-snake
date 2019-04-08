@@ -126,7 +126,7 @@ void main()
 	newfood();
 	showsnake();
 	while(1){
-		direction = getch();
+		direction = _getch();
 		if(move(direction)){
 			if(checkneck())continue;
 			else if(checkwall() || eatself())break;
@@ -138,5 +138,5 @@ void main()
 	}
 	gameover();
 
-	scanf("%d", &len);
+	getchar();
 }
